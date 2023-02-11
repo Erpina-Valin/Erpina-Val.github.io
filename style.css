@@ -57,6 +57,9 @@ table {
 
 /* style */
 
-.navbar-nav {
-    float: right;
+
+
+body {
+	width: 60%;
+	margin: auto;
 }
