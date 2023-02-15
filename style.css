@@ -57,47 +57,116 @@ table {
 
 /* style */
 
-
-
 body {
-	width: 60%;
+	background-color: #d6d6d6;
+	max-width: 80%;
 	margin: auto;
-}
-
-.display-4{
-	font-size: 43px;
 }
 
 .jumbotron {
 	background-image: url(img/frontend-dev.jpg);
 	background-size: cover;
+	min-height: 50vh;
+	/* background-position: 0 -50px; */
 	background-repeat: no-repeat;
-	background-position: 0 -150px;
+
 }
 
-.jumbotron .display-4{
+.jumbotron .display-4 {
+	font-size: 5vmax;
+	text-align: center;
 	color: white;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-.jumbotron p{
+.jumbotron .lead {
+	font-size: 2vmax;
+	text-align: center;
 	color: white;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
-	font-weight: lighter;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-.container .profil img{
-	margin-top: -160px;
-	border: 5px solid white!important;
+.about h3{
+	font-size: 4vh;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.about p{
+	font-size: 3vh;
+	color: white;
+}
+
+section {
+	position: relative;
+}
+
+section .about{
+	position: absolute;
+	box-sizing: border-box;
 }
 
 
 
-/* device */
+ 
 
-@media only screen and (max-width: 768px) {
-	/* For mobile phones: */
-	body {
-	  width: 100%;
-	}
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clear */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+	 content: " "; /* 1 */
+	 display: table; /* 2 */
+ }
+ 
+ .cf:after {
+	 clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+	 *zoom: 1;
+ }
