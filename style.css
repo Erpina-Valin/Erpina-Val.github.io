@@ -57,6 +57,13 @@ table {
 
 /* style */
 
+.navbar {
+	width: 100%;
+	position: fixed;
+	margin-left: -10%;
+	z-index: 9999;
+}
+
 body {
 	background-color: #d6d6d6;
 	max-width: 80%;
@@ -77,6 +84,7 @@ body {
 	text-align: center;
 	color: white;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	padding: 50px 0 20px 0;
 }
 
 .jumbotron .lead {
@@ -102,10 +110,6 @@ body {
 
 .about h3 p{
 	display: inline-block;
-}
-
-section {
-	position: relative;
 }
 
 section .about{
@@ -137,6 +141,10 @@ span {
 
 .container .skills{
 	position: relative;
+}
+
+.experiences {
+	display: inline-block;
 }
 
 
