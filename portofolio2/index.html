@@ -56,8 +56,8 @@
             </ul>
         </div> -->
 
-        <h3 class="light grey-text text-darken-3">My Skill</h3>
-        <div class="row center">
+        <!-- <h3 class="light grey-text text-darken-3">My Skill</h3> -->
+        <!-- <div class="row center">
             <div class="col m1 s12">
                 <img src="img/code.png" class="responsive-img materialboxed">
             </div>
@@ -70,13 +70,96 @@
                 <img src="img/photoshop.png" class="responsive-img materialboxed">
             </div>
 
-    </div>
+    </div> -->
     </div>
 </section>
 
 <section class="portfolio">
     <div class="container white-text z-depth-3 center-align">
-        <h3>PortFolio</h3>
+        <h3>ArtWork</h3>
+        <div class="gallery_container_parent">
+          <div class="gallery_container">
+              <figure class="gallery_item item_1" onclick="openmodal();currentslide(1)">
+                  <img src="./images/bike.jpg" alt="bike_image">
+                  <figcaption class="caption">My Lovely Bike <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_2" onclick="openmodal();currentslide(2)">
+                  <img src="./images/phone.jpg" alt="phone_image">
+                  <figcaption class="caption">My Lovely Phone <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_3" onclick="openmodal();currentslide(3)">
+                  <img src="./images/car2.jpg" alt="car_image">
+                  <figcaption class="caption">My Lovely Car <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_4" onclick="openmodal();currentslide(4)">
+                  <img src="./images/truck.jpg" alt="truck_image">
+                  <figcaption class="caption">My Lovely Truck <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_5" onclick="openmodal();currentslide(5)">
+                  <img src="./images/bike3.jpg" alt="bike_image">
+                  <figcaption class="caption">My Lovely Bike <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_6" onclick="openmodal();currentslide(6)">
+                  <img src="./images/phone2.jpg" alt="phome_image">
+                  <figcaption class="caption">My Lovely Phone <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+       
+              <figure class="gallery_item item_7" onclick="openmodal();currentslide(7)">
+                  <img src="./images/truck2.jpg" alt="truck_image">
+                  <figcaption class="caption">My Lovely Truck <br><br> Tap To Zoom In <br> <i class="fas fa-search"></i> </figcaption>
+              </figure>
+          </div>
+      </div>
+       
+      <!-- Ini Lightbox  -->
+      <div class="lightbox_container">
+          <i class="fas fa-times" id="close"></i>
+          <div class="parent_navigation">
+              <span class="prev" id="ripple">&#10094;</span>
+              <span class="next" id="ripple">&#10095;</span>
+          </div>
+   
+          <figure class="lightbox_item">
+              <img src="./images/bike.jpg" alt="bike_image">
+              <figcaption class="caption_lightbox">Ini Gambar Motor</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+              <img src="./images/phone.jpg" alt="phone_image">
+              <figcaption class="caption_lightbox">Ini Gambar Handphone</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+              <img src="./images/car2.jpg" alt="car_image">
+              <figcaption class="caption_lightbox">Ini Gambar Mobil</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+              <img src="./images/truck.jpg" alt="truck_image">
+              <figcaption class="caption_lightbox">Ini Gambar Truk</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+               <img src="./images/bike3.jpg" alt="bike_image">
+              <figcaption class="caption_lightbox">Ini Gambar Motor Ke-2</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+              <img src="./images/phone2.jpg" alt="phome_image">
+              <figcaption class="caption_lightbox">Ini Gambar Handphone Ke-2</figcaption>
+          </figure>
+   
+          <figure class="lightbox_item">
+              <img src="./images/truck2.jpg" alt="truck_image">
+              <figcaption class="caption_lightbox">My Lovely Truck Is here Bro</figcaption>
+          </figure>
+      </div>
+
 
     </div>
 </section>
@@ -112,6 +195,7 @@
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="script.js"></script>
 
     </body>
   </html>
