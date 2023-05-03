@@ -1,550 +1,92 @@
-/* reset */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-
-
-
-/* style */
-
-.navbar {
-	width: 100%;
-	position: fixed;
-	margin-left: -10%;
-	z-index: 9999;
+header {
+    padding: 50px;
+    font-size: 20px;
+    background-color: lightyellow;
+    text-align: center;
+    color: #8a6851;
 }
 
-body {
-	background-color: #d6d6d6;
-	max-width: 80%;
-	margin: auto;
+header img {
+    width: 20px;
+    margin-top: 20px;
 }
 
-.jumbotron {
-	background-image: url(img/frontend-dev.jpg);
-	background-size: cover;
-	min-height: 50vh;
-	/* background-position: 0 -50px; */
-	background-repeat: no-repeat;
-	position: relative;
-
+.runningText {
+    border-top: 5px solid #745e59;
+    background-color: #f6f3ee;
+    color: #8a6851;
 }
 
-.jumbotron .display-4 {
-	font-size: 5vmax;
-	text-align: center;
-	color: white;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	padding: 50px 0 20px 0;
-	margin-top: 150px;
+.container{
+    max-width: 100%;
+    background-color: #ffff;
+    box-sizing: border-box;
+    display: flex;
+    border-bottom: 5px solid #745e59;
 }
 
-.jumbotron .lead {
-	font-size: 2vmax;
-	text-align: center;
-	color: white;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+.submenu {
+    flex: 0;
+    order: 1;
+    /* border: 1px solid black; */
 }
 
-.about .card-header h3{
-	font-size: 4vh;
-	font-weight: bold;
-	text-align: center;
-	padding: 0;
-	color: white;
-	margin: 0;
+ul li {
+   list-style: none;
+   border: 1px solid white;
+   padding: 10px;
+   padding-right: 100px;
+   background-color: #ebded4;
+   color: #8a6851;
+   cursor: pointer;
 }
 
-.about p{
-	font-size: 3vh;
-	color: white;
-	margin-top: 70px;
-	margin-bottom: 50px;
+ul li img {
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 25px;
+    border-style: 1px solid rgb(0, 0, 0);
 }
 
-.about h3 p{
-	display: inline-block;
+h4 {
+    margin-left: 25px;
 }
 
-section .about{
-	position: absolute;
-	box-sizing: border-box;
+.content {
+    flex: 1;
+    order: 2;
+    background-color: #eaeaea;
+    padding: 10px;
+
+}
+.kosong {
+    height: 400px;
 }
 
-.skills .card{
-	background-color: rgba(255, 255, 255, 0);
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+.content img {
+    width: 300px;
 }
 
-.skills h3 {
-	font-size: 4vh;
+.content h3 {
+    text-align: center;
+    font-size: 20px;
 }
 
-h3{
-	display:flex;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	justify-content: center;
-	font-size: 4vh;
-}
-
-.about {
-	position: relative;
-}
-
-.about h3{
-	margin-right: 50%;
-	color: white;
-	position: absolute;
-}
-
-span {
-	border: 1px solid rgb(180, 178, 178);
-	width: 60%;
-}
-
-.container .skills{
-	position: relative;
-}
-
-.experiences{
-	background-color: rgb(0, 26, 255,0.4);
-}
-
-.hob1,
-.hob2,
-.hob3 {
-	margin-right: 20px;
-	text-align: center;
+.content p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer {
-	max-width: 80%;
-}
-
-.puremedia {
-	color: white;
-	font-weight: bold;
-}
-
-.container #profil {
-	position: absolute;
-	width: 170px;
-	margin-top: -120px;
-	margin-left: 37%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* galery */
-
-h1{
+    max-width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
-    text-transform: uppercase;
-    color: #000;
+    padding-top: 25px;
 }
- 
-.gallery_container{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,5vw);
-    grid-gap: 1rem;
-    padding: 1rem;
-}
- 
-.gallery_container .gallery_item{
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
- 
-.gallery_container .gallery_item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .3s;
-}
- 
-.gallery_container .gallery_item figcaption{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-    opacity: 0;
-    transition: .3s;
-    text-align: center;
-}
- 
- 
-.gallery_container .gallery_item:hover img{
-    filter: brightness(.5);
-    transform: scale(1.2);
-}
- 
-.gallery_container .gallery_item:hover figcaption{
-    opacity: 1;
-}
- 
-.gallery_container .gallery_item.item_1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 5;
-}
- 
-.gallery_container .gallery_item.item_2{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-}
- 
-.gallery_container .gallery_item.item_3{
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 7;
-}
- 
-.gallery_container .gallery_item.item_4{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 9;
-}
-.gallery_container .gallery_item.item_5{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 9;
-    grid-row-end: 12;
-}
-.gallery_container .gallery_item.item_6{
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 7;
-    grid-row-end: 11;
-}
-.gallery_container .gallery_item.item_7{
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 11;
-    grid-row-end: 11;
-}
- 
-@media (max-width: 600px) {
-    .gallery_container{
-        grid-gap: .5em;
-    }
- 
-    .gallery_container .gallery_item figcaption{
-        font-size: .8rem;
-    }
- 
-    .gallery_container .gallery_item.item_1{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-     
-    .gallery_container .gallery_item.item_2{
-        grid-column-start: 5;
-        grid-column-end: 10;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-     
-    .gallery_container .gallery_item.item_3{
-        grid-column-start: 5;
-        grid-column-end: 10;
-        grid-row-start: 5;
-        grid-row-end: 11;
-    }
-     
-    .gallery_container .gallery_item.item_4{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 9;
-    }
-    .gallery_container .gallery_item.item_5{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 9;
-        grid-row-end: 14;
-    }
-    .gallery_container .gallery_item.item_6{
-        grid-column-start: 5;
-        grid-column-end: 10;
-        grid-row-start: 11;
-        grid-row-end: 12;
-    }
-    .gallery_container .gallery_item.item_7{
-        grid-column-start: 5;
-        grid-column-end: 10;
-        grid-row-start: 12;
-        grid-row-end: 14;
-    }
- 
-}
- 
-@media (max-width: 423px){
-    .gallery_container{
-        display: flex;
-        flex-direction: column;
-    }
-}
- 
-.lightbox_container{
-    width: 100%;
-    height: 100vh;
-    background-color: #000000c0;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(.5);
-    opacity: 0%;
-    visibility: hidden;
-    transition: .3s;
-}
- 
-.lightbox_container.show{
-    transform: scale(1);
-    opacity: 100%;
-    visibility: visible;
-}
- 
-.lightbox_container #close{
-    color: #fff;
-    z-index: 3;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    padding: .25em .4em;
-    border-radius: 50%;
-    transform: scale(1.7);
-    cursor: pointer;
-    transition: .3s;
-}
- 
-.lightbox_container #close:hover{
-    background-color: #dfdfdf6c;
-}
- 
-.lightbox_container #close:active{
-    background-color: rgb(0, 0, 0);
-    transition: 0s !important;
-}
- 
-.lightbox_container .parent_navigation{
-    position: static;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
- 
-.lightbox_container .parent_navigation #ripple{
-    font-size: 1.6rem;
-    color: #fff;
-    padding: .8em;
-    margin: 4rem;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: .3s;
-}
- 
-.lightbox_container .parent_navigation #ripple:hover{
-    background-color: #dfdfdf6c;
-}
- 
-.lightbox_container .parent_navigation #ripple span{
-    position: absolute;
-    background-color: #dfdfdf6c;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    animation: anim 1s;
-    border-radius: 50%;
-}
- 
-@keyframes anim {
-    0%{
-        height: 0px;
-        width: 0px;
-        opacity: 100%;
-    }
-    100%{
-        height: 500px;
-        width: 500px;
-        opacity: 0%;
-    }
-}
- 
-.lightbox_container .lightbox_item{
-    position: absolute;
-    height: auto;
-    width: 70%;
-    transition: .3s ease-in;
-}
- 
-.lightbox_container .lightbox_item.active{
-    opacity: 0;
-}
- 
-.lightbox_container .lightbox_item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
- 
-.lightbox_container .lightbox_item figcaption{
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding-top: .5rem;
-}
- 
-@media (max-width: 700px){
-    .lightbox_container .lightbox_item{
-        width: 83%;
-    }
-    .lightbox_container .parent_navigation #ripple{
-        margin: 0rem;
-        padding: .4em;
-    }
-}
-  
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* clear */
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
- .cf:before,
- .cf:after {
-	 content: " "; /* 1 */
-	 display: table; /* 2 */
- }
- 
- .cf:after {
-	 clear: both;
- }
- 
- /**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
- .cf {
-	 *zoom: 1;
- }
