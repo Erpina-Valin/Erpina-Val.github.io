@@ -56,7 +56,7 @@ ul li img {
 }
 
 h4 {
-    margin-left: 25px;
+    text-align: center;
 }
 
 .content {
@@ -92,4 +92,20 @@ footer {
     color: white;
     text-align: center;
     padding-top: 25px;
+}
+
+
+@media screen and (max-width:680px){
+    .submenu{
+        width: auto;
+        float: none;
+    }
+    .content {
+        width: auto;
+        float: none;
+    }
+    header {
+        width: auto;
+        float: none;
+    }
 }
