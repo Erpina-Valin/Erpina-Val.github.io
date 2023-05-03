@@ -113,4 +113,8 @@ footer {
         width: 100%;
         float: none;
     }
+
+    .kosong {
+        min-height: 800px;
+    }
 }
